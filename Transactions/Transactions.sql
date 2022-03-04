@@ -1,7 +1,10 @@
 --transactions
- select * from Employees
+ select * from Employees 
+
+  select * from Details
+
  begin transaction
- update Employees set salary=25000 where Employee_Id=1
+ update Details set Job_Title='Support' where Employee_Id=1
 
  
  Rollback transaction
@@ -27,6 +30,7 @@ begin
 	  Print 'Transaction Rolled Back'
    end catch
 end
+
 
 EXEC spUpdateAddress
 
