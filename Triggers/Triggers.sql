@@ -19,7 +19,7 @@ Begin
 End
 
 
-Insert into Employee values(20,'Anu')
+Insert into Employee values(22,'Anu')
 
 -----------------------------------------------------------------------------------------
 
@@ -30,7 +30,7 @@ Begin
     Insert into Employee_Log select Id ,'Updated',GetDate() from Inserted
 End
 
-update Employee set age=21 where Id=1003
+update Employee set age=21 where Id=1004
 
 ----------------------------------------------------------------------------------------------
 
