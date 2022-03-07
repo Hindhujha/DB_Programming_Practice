@@ -1,0 +1,4 @@
+@echo off
+@echo Executing Mutiple sql scripts from folder in one go
+for %%G in (*.sql) do sqlcmd -s DESKTOP-FC404HQ\SQLEXPRESS -d Demo -E -i ""%%G
+PAUSE
