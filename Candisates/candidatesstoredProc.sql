@@ -73,3 +73,24 @@ Begin
 Insert into Details_Candidates
 (id,permanent_address,Job_Title,salary_package) values (@id,@permanent_address,@Job_Title,@salary_package)
 End
+-------------------------------------------------------------------------------------------------------
+create procedure sp_Insert_candidate_details
+@id int,
+@salaryPkg money,
+@job_Title varchar(20),
+@alternate_phNo varchar(10)
+As
+begin Insert into candidate_details
+(id,salaryPkg,job_Title,alternate_phNo) values (@id,@salaryPkg,@job_Title,@alternate_phNo)
+End
+
+------------------------------------------------------------------------------------
+create procedure sp_Insert_candidate_Marks
+@Percentage_10th int,
+@Percantage_12th int ,
+@education_gap varchar(10),
+@id int
+As
+begin Insert into candidate_Marks
+(Percentage_10th,Percantage_12th,education_gap,id) values (@Percentage_10th,@Percantage_12th,@education_gap,@id)
+End
